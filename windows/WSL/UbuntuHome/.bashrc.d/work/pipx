@@ -1,0 +1,4 @@
+# pipx
+# https://pipx.pypa.io/stable/installation/
+# sudo apt install pipx
+command -v pipx &> /dev/null && eval "$(register-python-argcomplete3 pipx)"

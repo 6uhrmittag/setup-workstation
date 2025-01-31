@@ -1,0 +1,9 @@
+# Managed by Puppet!
+
+############################################################
+# Common Aliases
+############################################################
+
+# Passwortgenerator
+alias pw="pwgen -1 -s -ync -r '&*\`!^%$'  40 30"
+alias pws="pwgen -1 -nc 40 20"

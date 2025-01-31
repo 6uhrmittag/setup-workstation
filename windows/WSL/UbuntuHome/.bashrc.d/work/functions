@@ -1,0 +1,17 @@
+# Managed by Puppet!
+
+############################################################
+# Common Functions
+############################################################
+
+# Ping with timestamp
+function pingt() {
+        ping -i 1 -O "$1" | ts
+}
+export -f pingt
+
+# HTTP-Ping
+function pingh() {
+        httping -i 1 -s -W -t 1 --timestamp -Z "$1"
+}
+export -f pingh
