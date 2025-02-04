@@ -91,16 +91,6 @@
         "hidden": false,
         "name": "PowerShell",
         "source": "Windows.Terminal.PowershellCore"
-      },
-      {
-        "colorScheme": "Campbell",
-        "commandline": "%USERPROFILE%/AppData/Local/Microsoft/WindowsApps/Microsoft.PowerShell_8wekyb3d8bbwe/pwsh.exe/",
-        "elevate": true,
-        "guid": "{2ba86063-1650-41bd-8a62-4bd49c025b3e}",
-        "hidden": false,
-        "icon": "ms-appx:///ProfileIcons/pwsh.png",
-        "name": "PowerShell - Admin",
-        "startingDirectory": "%USERPROFILE%"
       }
     ]
   },
