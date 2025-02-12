@@ -1,0 +1,44 @@
+#cloud-config
+# for all ubuntu WSL instances
+#
+# https://documentation.ubuntu.com/wsl/en/latest/tutorials/cloud-init/
+# https://documentation.ubuntu.com/wsl/en/github-actions-docs/tutorials/interop/
+# https://documentation.ubuntu.com/lxd/en/latest/cloud-init/
+# https://cloudinit.readthedocs.io/en/latest/reference/datasources/wsl.html
+
+# User-data can be supplied in any format supported by cloud-init, such as YAML cloud-config files or shell scripts.
+# Order that gets checked:
+# Only the FIRST match is loaded, and no config merging is done, even in the presence of errors!!
+# %USERPROFILE%\.cloud-init\<InstanceName>.user-data -> InstanceName is the name of the WSL instance
+# %USERPROFILE%\.cloud-init\<ID>-<VERSION_ID>.user-data ->  distro ID and VERSION_ID entries as specified in /etc/os-release -> ubuntu-22.04.user-data
+# %USERPROFILE%\.cloud-init\<ID>-all.user-data -> distro ID entry in /etc/os-release -> ID=ubuntu
+# %USERPROFILE%\.cloud-init\default.user-data -> for the configuration affecting all instances, regardless of which distro and release version,
+
+# TL;DR: maybe use %USERPROFILE%\.cloud-init\ubuntu-all.user-data
+
+
+
+package_update: true # Update APT on first boot
+package_upgrade: true # Upgrade on first boot
+packages:
+  - software-properties-common
+  - bash-completion
+  - curl
+  - htop
+  - jq
+  - moreutils
+  - pwgen
+  - tree
+  - unzip
+  - vim
+  - traceroute
+  - git
+  - apt-transport-https
+  - unattended-upgrades
+
+final_message: |
+  cloud-init has finished
+  version: $version
+  timestamp: $timestamp
+  datasource: $datasource
+  uptime: $uptime
