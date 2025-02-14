@@ -52,7 +52,19 @@ write_files:
           sudo apt install gh
       path: /tmp/install-gh-cli.sh
       permissions: '0755'
+    - content: |
+          #!/bin/bash
+          cd /tmp
+          gh release download -p "*" -R githubnext/monaspace
+          unzip monaspace*.zip
+          cd monaspace*
+          ./util/install_linux.sh
+          cd /tmp
+          rm -fr /tmp/monaspace*
+      path: /tmp/install-font-monaspace.sh
+      permissions: '0755'
 
 # - runcmd only runs during the first boot :(
 runcmd:
     - /tmp/install-gh-cli.sh
+    - /tmp/install-font-monaspace.sh
