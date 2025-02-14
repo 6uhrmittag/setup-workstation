@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+# Color codes proudly stolen from: https://github.com/VoidCrowned/co_learn/blob/0e454b0540f4f155ac2d4d77ca561e9c5b95679e/arch_scripts/99_styles.sh 👀
+# Text formatting
+fres='\033[0m'
+fbol='\033[1m'
+fdim='\033[2m'
+fuli='\033[4m'
+fbli='\033[5m'
+finv='\033[7m'
+fhid='\033[8m'
+
+# Foreground colours
+fgbla='\033[0;30m'
+fgred='\033[0;31m'
+fggre='\033[0;32m'
+fgyel='\033[0;33m'
+fgblu='\033[0;34m'
+fgmag='\033[0;35m'
+fgcya='\033[0;36m'
+fgwhi='\033[0;37m'
+
+# Background colours
+bgbla='\033[0;40m'
+bgred='\033[0;41m'
+bggre='\033[0;42m'
+bgyel='\033[0;43m'
+bgblu='\033[0;44m'
+bgmag='\033[0;45m'
+bgcya='\033[0;46m'
+bgwhi='\033[0;47m'
+
+
+# For Hostname: In WSL use $WSL_DISTRO_NAME, else use actual hostname
+if [ -n "$WSL_DISTRO_NAME" ]; then
+    PROMPT_HOSTNAME="$WSL_DISTRO_NAME"
+else
+    PROMPT_HOSTNAME=$(hostname)
+fi
+
+
+# prompt
+# Which to use when depends on soo many things... maybe I'll add a hyperaware AI to decide for me one day🤷
+# Colors are somewhat "matched" to be used with MS Terminal color scheme "Atom One Dark"
+# PS1="\[\e]0;\h@: \w\007\]${debian_chroot:+($debian_chroot)}${fgwhi}\u${fres}@${fdim}${fgwhi}\h${fres}:${fgblu}\w${fres}\$ "
+# PS1="\[\e]0;\h@: \w\007\]${debian_chroot:+($debian_chroot)}${fgwhi}m${fres}@${fdim}${fgwhi}LAPTOP${fres}:${fgblu}\w${fres}\$ "
+# PS1="\[\e]0;LAPTOP@: \w\007\]${debian_chroot:+($debian_chroot)}${fgwhi}m${fres}@${fdim}${fgwhi}LAPTOP${fres}:${fgblu}\w${fres}\$ "
+# PS1="\[\e]0;\h@: \w\007\]${debian_chroot:+($debian_chroot)}${fgwhi}marvin${fres}@${fdim}${fgwhi}WSL${fres}:${fgblu}\w${fres}\$ "
+PS1="\[\e]0;${PROMPT_HOSTNAME}@: \w\007\]${debian_chroot:+($debian_chroot)}${fgwhi}marvin${fres}@${fdim}${fgwhi}${PROMPT_HOSTNAME}${fres}:${fgblu}\w${fres}\$ "
