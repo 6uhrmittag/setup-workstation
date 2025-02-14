@@ -21,24 +21,38 @@
 package_update: true # Update APT on first boot
 package_upgrade: true # Upgrade on first boot
 packages:
-  - software-properties-common
-  - bash-completion
-  - curl
-  - htop
-  - jq
-  - moreutils
-  - pwgen
-  - tree
-  - unzip
-  - vim
-  - traceroute
-  - git
-  - apt-transport-https
-  - unattended-upgrades
+    - software-properties-common
+    - bash-completion
+    - curl
+    - htop
+    - jq
+    - moreutils
+    - pwgen
+    - tree
+    - unzip
+    - vim
+    - traceroute
+    - git
+    - apt-transport-https
+    - unattended-upgrades
 
 final_message: |
-  cloud-init has finished
-  version: $version
-  timestamp: $timestamp
-  datasource: $datasource
-  uptime: $uptime
+    cloud-init has finished
+    version: $version
+    timestamp: $timestamp
+    datasource: $datasource
+    uptime: $uptime
+
+write_files:
+    - content: |
+          #!/bin/bash
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/etc/apt/trusted.gpg.d/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/trusted.gpg.d/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt update
+          sudo apt install gh
+      path: /tmp/install-gh-cli.sh
+      permissions: '0755'
+
+# - runcmd only runs during the first boot :(
+runcmd:
+    - /tmp/install-gh-cli.sh
