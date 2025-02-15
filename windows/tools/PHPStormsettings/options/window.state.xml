@@ -1,0 +1,40 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.3840.2160@120dpi" x="1591" y="238" />
+    <location key="find.popup.2400.-1730.3840.2160@120dpi" x="3640" y="-1525" />
+    <location key="find.popup.-2560.726.2560.1440" x="-1760" y="959" />
+    <location key="find.popup.-1920.937.1920.1200" x="-1304" y="1054" />
+    <location key="find.popup.-1920.979.1920.1080" x="-1124" y="1094" />
+    <location key="find.popup.0.0.2560.1440" x="758" y="105" />
+    <size key="find.popup.0.0.3840.2160@120dpi" width="1620" height="1235" />
+    <size key="find.popup.2400.-1730.3840.2160@120dpi" width="2207" height="1754" />
+    <size key="find.popup.-2560.726.2560.1440" width="1518" height="981" />
+    <size key="find.popup.-1920.937.1920.1200" width="1104" height="1003" />
+    <size key="find.popup.-1920.979.1920.1080" width="980" height="645" />
+    <size key="find.popup.0.0.2560.1440" width="1473" height="1165" />
+  </component>
+  <component name="WindowManager">
+    <frame x="1455" y="0" width="2385" height="2100" extendedState="6" />
+  </component>
+  <component name="WindowStateApplicationService">
+    <state width="664" height="134" key="ShowUsagesActions.dimensionServiceKey" timestamp="1731510038521">
+      <screen x="0" y="0" width="3072" height="1680" />
+    </state>
+    <state width="664" height="134" key="ShowUsagesActions.dimensionServiceKey/-1920.979.1920.1020/0.0.3072.1680" timestamp="1731510038521" />
+    <state x="1536" y="668" width="800" height="650" key="WELCOME_SCREEN" timestamp="1738183576240">
+      <screen x="0" y="0" width="3072" height="1680" />
+    </state>
+    <state x="1536" y="668" width="800" height="650" key="WELCOME_SCREEN/-1920.979.1920.1020/0.0.3072.1680" timestamp="1738183576240" />
+    <state x="1536" y="668" width="800" height="650" key="WELCOME_SCREEN/3840.1071.1920.1020/-2560.703.2560.1392/0.0.3072.1680" timestamp="1737121948109" />
+    <state x="1536" y="668" width="800" height="650" key="WELCOME_SCREEN/3840.1071.1920.1020/0.0.3072.1680/-2560.703.2560.1392" timestamp="1737457753972" />
+    <state x="945" y="420" key="find.popup" timestamp="1738754571047">
+      <screen x="0" y="0" width="3072" height="1680" />
+    </state>
+    <state x="1811" y="112" key="find.popup/-1920.979.1920.1020/0.0.3072.1680" timestamp="1734533740050" />
+    <state x="945" y="420" key="find.popup/3840.1071.1920.1020/-2560.703.2560.1392/0.0.3072.1680" timestamp="1738754571047" />
+    <state width="300" height="524" key="manage.recent.projects.popup" timestamp="1731427384359">
+      <screen x="0" y="0" width="3072" height="1680" />
+    </state>
+    <state width="300" height="524" key="manage.recent.projects.popup/-1920.979.1920.1020/0.0.3072.1680" timestamp="1731427384359" />
+  </component>
+</application>

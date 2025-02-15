@@ -1,0 +1,11 @@
+<application>
+  <component name="IgnoredPluginSuggestions">
+    <option name="pluginIds">
+      <list>
+        <option value="com.intellij.kubernetes" />
+        <option value="AngularJS" />
+        <option value="JavaScriptDebugger" />
+      </list>
+    </option>
+  </component>
+</application>

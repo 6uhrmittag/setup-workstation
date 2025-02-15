@@ -1,0 +1,19 @@
+io.unthrottled.amii
+Batch Scripts Support
+some.awesome
+dev.gabrielchl.intellij-pets
+lermitage.intellij.ilovedevtoys
+com.github.wenzewoo.jetbrains.plugin.jetbrains-markdown-image-support
+org.jetbrains.plugins.go-template
+com.intellij.lang.puppet
+dev.turingcomplete.intellijdevelopertoolsplugins
+dev.priporov.idea.notes
+com.intellij.properties
+String Manipulation
+dev.meanmail.plugin.nginx-intellij-plugin
+com.intellij.plugin.adernov.powershell
+net.seesharpsoft.intellij.plugins.csv
+com.github.copilot
+uk.co.ben-gibson.remote.repository.mapper
+zielu.gittoolbox
+com.github.blarc.gitlab-template-lint-plugin

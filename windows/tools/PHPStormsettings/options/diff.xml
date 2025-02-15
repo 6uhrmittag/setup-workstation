@@ -1,0 +1,15 @@
+<application>
+  <component name="ExternalDiffSettings">
+    <option name="MIGRATE_OLD_SETTINGS" value="true" />
+  </component>
+  <component name="TextDiffSettings">
+    <option name="PLACES_MAP">
+      <entry key="Default">
+        <PlaceSettings>
+          <option name="HIGHLIGHTING_LEVEL" value="SIMPLE" />
+          <option name="HIGHLIGHT_POLICY" value="BY_WORD_SPLIT" />
+        </PlaceSettings>
+      </entry>
+    </option>
+  </component>
+</application>

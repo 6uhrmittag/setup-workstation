@@ -1,0 +1,8 @@
+<application>
+  <component name="BlockTerminalOptions">
+    <option name="promptStyle" value="SINGLE_LINE" />
+  </component>
+  <component name="TerminalOptionsProvider">
+    <option name="mySoundBell" value="false" />
+  </component>
+</application>

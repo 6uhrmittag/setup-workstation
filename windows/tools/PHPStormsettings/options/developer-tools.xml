@@ -1,0 +1,6 @@
+<application>
+  <component name="DeveloperToolsApplicationSettingsV1" addOpenMainDialogActionToMainToolbar="false" autoDetectActionHandlingInstance="true" editorShowSpecialCharacters="false" editorShowWhitespaces="false" editorSoftWraps="true" hideWorkbenchTabsOnSingleTab="true" loadExamples="true" promoteAddOpenMainDialogActionToMainToolbar="true" saveConfigurations="true" saveInputs="true" saveSensitiveInputs="false" selectedActionHandlingInstance="Tool Window" showInternalTools="false" toolsMenuTreeOrderAlphabetically="true" toolsMenuTreeShowGroupNodes="false" />
+  <component name="DeveloperToolsDialogSettingsV1" dialogIsModal="false">
+    <developerToolsConfigurations />
+  </component>
+</application>

@@ -1,0 +1,32 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="ComposerSettings">
+        <execution />
+      </component>
+      <component name="DiscordProjectSettings">
+        <option name="show" value="ASK" />
+        <option name="description" value="" />
+        <option name="applicationTheme" value="default" />
+        <option name="iconsTheme" value="default" />
+        <option name="button1Title" value="" />
+        <option name="button1Url" value="" />
+        <option name="button2Title" value="" />
+        <option name="button2Url" value="" />
+        <option name="customApplicationId" value="" />
+      </component>
+      <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "settings.editor.selected.configurable": "dev.priporov.ideanotes.configuration.NotesTreeConfigurable"
+  }
+}]]></component>
+      <component name="VcsDirectoryMappings" defaultProject="true" />
+      <component name="WindowStateProjectService">
+        <state x="1038" y="471" key="SettingsEditor" timestamp="1739470797176">
+          <screen x="0" y="0" width="3072" height="1680" />
+        </state>
+        <state x="1038" y="471" key="SettingsEditor/-1920.979.1920.1020/0.0.3072.1680" timestamp="1739470797176" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

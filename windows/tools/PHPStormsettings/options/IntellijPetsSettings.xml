@@ -1,0 +1,12 @@
+<application>
+  <component name="dev.gabrielchl.intellijpets.settings.AppSettingsState">
+    <option name="petList">
+      <list>
+        <option value="cat-1" />
+        <option value="axolotl" />
+        <option value="bunny" />
+      </list>
+    </option>
+    <option name="petScale" value="0.2" />
+  </component>
+</application>

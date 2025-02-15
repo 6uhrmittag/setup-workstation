@@ -1,0 +1,6 @@
+# settings that vary between machines
+github.xml
+GitLink.xml
+GitlabLint.xml
+trusted-paths.xml
+gitlab.xml

@@ -1,0 +1,22 @@
+<application>
+  <component name="StringManipulationState">
+    <option name="lastActionModel">
+      <UniversalActionModel>
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.filter.RemoveEmptyLinesAction" />
+        <option name="description" value="Remove empty lines in selected text" />
+        <option name="textWithMnemonic" value="Remove Empty Lines" />
+      </UniversalActionModel>
+    </option>
+    <option name="sortSettingsMap">
+      <map>
+        <entry key="SortAction">
+          <value>
+            <SortSettings>
+              <option name="ignoreLeadingCharacters" value="//" />
+            </SortSettings>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</application>
