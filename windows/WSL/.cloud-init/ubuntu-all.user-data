@@ -57,7 +57,7 @@ write_files:
           cd /tmp
           gh release download -p "*" -R githubnext/monaspace
           unzip monaspace*.zip
-          cd monaspace*
+          cd mona*/
           ./util/install_linux.sh
           cd /tmp
           rm -fr /tmp/monaspace*
