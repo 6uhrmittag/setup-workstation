@@ -35,6 +35,8 @@ packages:
     - git
     - apt-transport-https
     - unattended-upgrades
+    - fd-find
+    - ripgrep
 
 final_message: |
     cloud-init has finished
